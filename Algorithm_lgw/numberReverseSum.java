@@ -1,3 +1,4 @@
+// http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=288&sca=20
 import java.util.Scanner;
 
 public class numberReverseSum {

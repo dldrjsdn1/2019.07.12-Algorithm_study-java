@@ -1,4 +1,3 @@
-
 // http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=992&sca=20
 import java.util.Scanner;
 

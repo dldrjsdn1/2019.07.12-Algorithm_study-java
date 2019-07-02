@@ -1,5 +1,4 @@
-// 값이 다르게 나옴
-
+// http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=795&sca=20
 import java.util.Scanner;
 
 public class starTriangle {
@@ -10,7 +9,7 @@ public class starTriangle {
 
 		int height = 0;
 		int kinds = 0;
-		int num =1;
+		
 
 		System.out.print("한 변의 길이 : ");
 		height = sc.nextInt();
@@ -32,21 +31,19 @@ public class starTriangle {
 				System.out.println();
 			}
 		}else if(kinds == 3) {
-			int mid = height/2+1;
+			int mid = height-1;
+			int num =1;
 			
 			for(int i=0; i<height; i++) {
-				for(int j=1; j<=height; j++) {
-					if(j == mid) {
-						for(int k=0; k < num; k++)
-						System.out.print("*");
-					}
+				for(int j=0; j<mid; j++) {
 					System.out.print(" ");
 				}
-				mid-=1;
+				for(int k=0; k < num; k++)
+					System.out.print("*");
+				mid--;
 				num+=2;
 				System.out.println();
 			}
 		}
 	}
-
 }

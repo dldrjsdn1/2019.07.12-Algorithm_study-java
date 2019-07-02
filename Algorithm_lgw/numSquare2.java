@@ -1,5 +1,4 @@
-
-//http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1129&sca=20
+// http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=1129&sca=20
 import java.lang.reflect.Array;
 import java.util.Scanner;
 
@@ -25,12 +24,17 @@ public class numSquare2 {
 					arr[i][j] = num++;
 				}
 			} else {
-				for (j = width - 1; j >= 0; j--) {
+				for (j = width-1; j >= 0; j--) {
 					arr[i][j] = num++;
 				}
 			}
+		}
+		
+		for(i=0; i<height; i++) {
+			for(j=0; j<width; j++) {
+				System.out.print(arr[i][j]+" ");
+			}
 			System.out.println();
 		}
-
 	}
 }
