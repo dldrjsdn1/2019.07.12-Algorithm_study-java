@@ -31,7 +31,7 @@ public class starTriangle {
 				System.out.println();
 			}
 		}else if(kinds == 3) {
-			int mid = height-1;
+			int mid = height-1; // 맨 마지막에 나오는 별의 갯수 기준으로 중앙을 잡으면 height-1이된다.(5개->마지막 9개별->중앙 5번째)
 			int num =1;
 			
 			for(int i=0; i<height; i++) {
