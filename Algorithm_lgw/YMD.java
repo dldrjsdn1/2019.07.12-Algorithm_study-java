@@ -1,9 +1,18 @@
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class YMD {
 	private int y;
 	private int m;
 	private int d;
 
+	YMD() {
+		this.y = 2019;
+		this.m = 1;
+		this.d = 1;
+	}
+	
 	YMD(int y, int m, int d) {
 		this.y = y;
 		this.m = m;
@@ -11,18 +20,13 @@ public class YMD {
 	}
 
 	public void YMDAfter(int n) {
-		int date = (this.d + n);
-		if (date > 31) {
-			int month = this.m + 1;
-			if (month > 12) {
-				this.y = this.y + 1;
-				this.m = this.m % 12;
-			} else
-				this.m = month;
-			this.d = date % 31;
-		} else
-			this.d = date;
-		System.out.println(this.y + "년 " + this.m + "월" + this.d + "일");
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+		Date date = format.parse('"'+this.y+'-'+this.m+'-'+this.d+'"');
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		cal.add(Calendar.DATE,n);
+		
+		System.out.println(format.format(cal.getTime()));
 	}
 
 	public void YMDBefore(int n) {
@@ -40,4 +44,6 @@ public class YMD {
 			this.d = date;
 		System.out.println(y + "년 " + m + "월" + d + "일");
 	}
+	
+	int[] a = {1,2,3,4};
 }
