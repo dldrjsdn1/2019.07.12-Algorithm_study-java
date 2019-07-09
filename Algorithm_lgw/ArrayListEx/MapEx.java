@@ -19,7 +19,7 @@ public class MapEx {
 				map.put(array[i], 1);
 			}
 		}
-		System.out.println(map);
+		System.out.println(map); 
 		
 		
 		for(int i=0; i<array.length; i++) {

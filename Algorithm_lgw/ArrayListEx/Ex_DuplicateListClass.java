@@ -17,7 +17,7 @@ public class Ex_DuplicateListClass {
 			}
 		}
 		
-		System.out.println(store);
+		System.out.println(store); 
 		System.out.println("중복 값 출력");
 	}
 	

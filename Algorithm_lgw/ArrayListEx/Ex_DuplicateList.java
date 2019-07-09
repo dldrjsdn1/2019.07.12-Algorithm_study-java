@@ -22,7 +22,7 @@ public class Ex_DuplicateList {
 	List<String> list2 = new ArrayList<String>();
 	
 	
-	list1.add("a");
+	list1.add("a"); 
 	list1.add("b");
 	list1.add("c");
 	list1.add("d");
