@@ -17,7 +17,7 @@ public class Ex_DuplicateListClass {
 			}
 		}
 		
-		System.out.println(store); 
+		System.out.println(store);
 		System.out.println("중복 값 출력");
 	}
 	
@@ -28,16 +28,16 @@ public class Ex_DuplicateListClass {
 	}
 	
 	
-	public void Deduplication(List<String> list1, List<String> list2) {
-		
-		for(int i=0; i<list1.size();i++) {
-			for(int j=0; j<list2.size();j++)
-			if(!list1.get(i).equals(list2.get(j))) {
-				list1.add(list2.get(j));
-			}
-		}
-		System.out.println(list1);
-		System.out.println("중복 아닌 것만 출력");
-	}
+//	public void Deduplication(List<String> list1, List<String> list2) {
+//		
+//		for(int i=0; i<list1.size();i++) {
+//			for(int j=0; j<list2.size();j++)
+//			if(!list1.get(i).equals(list2.get(j))) {
+//				list1.add(list2.get(j));
+//			}
+//		}
+//		System.out.println(list1);
+//		System.out.println("중복 아닌 것만 출력");
+//	}
 
 }

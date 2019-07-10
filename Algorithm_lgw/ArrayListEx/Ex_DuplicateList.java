@@ -43,7 +43,7 @@ public class Ex_DuplicateList {
 	ListClass.ListSum(list1,list2);
 	
 	//중복 아닌 것 가져오기
-	ListClass.Deduplication(list1, list2);
+//	ListClass.Deduplication(list1, list2);
 	
 	}
 }
